@@ -1,0 +1,823 @@
+/* Adding League Spartan from the leagueofordinarytype.com */
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fontface/leaguespartan-bold.eot');
+    src: url('../style/fontface/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('../style/fontface/leaguespartan-bold.woff2') format('woff2'),
+         url('../style/fontface/leaguespartan-bold.woff') format('woff'),
+         url('../style/fontface/leaguespartan-bold.ttf') format('truetype'),
+         url('../style/fontface/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+#h1-ampersand {
+    font-family: 'Fanwood Text', serif;
+    font-style: italic;
+    font-size: 127px;
+    font-weight: bold;
+}
+
+
+#home-h2 {
+    cursor: pointer;
+    color: #F1F1F0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+
+body {
+    background-color: #53353D;
+}
+
+#title-h1 {
+    padding-top: 220px;
+    color: #F1F1F0;
+    text-align: center; 
+    font-size: 100px;
+    font-family: 'League Spartan';
+    letter-spacing: 4px;
+}
+
+
+header {
+    position: relative;
+    top: -5px;
+    width: 95%;
+    height: 77px;
+    margin: 0 auto;
+    
+}
+
+#nav-container {
+    position: sticky;
+    top:0;
+    background-color: #53353D;
+    width: 101%;
+    z-index: 1;
+}
+
+#about-p, #customer-p, #organizer-p, #contact-p {
+
+    position: relative;
+    top:22px;
+    margin: 0 auto 0 auto;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+
+#nav-items {
+    position: absolute;
+    top:0;
+    right: 0;
+    
+    
+ display: inline-block;
+}
+
+#nav-customer-div, #nav-customer-div, #organizer-div, #signin-div {
+    display: inline-block;
+    margin-left: 5px;
+    height: 70px;
+    
+}
+
+#home-div, #about-div, #nav-customer-div, #organizer-div, #signin-div, #main-modal{
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+}
+
+#signin-div {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #F1F1F0;
+}
+
+#home-div {
+    position: relative;
+    top: -8px;
+    left: -15px;
+    
+}
+
+#main-modal {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+
+ 
+}
+
+#img-modal{
+    width:50px;
+}
+#sosh-modal-div {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding-top: 18px;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    cursor: pointer;
+ 
+}
+
+#sosh-img-modal {
+    width:40px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#title-div {
+
+    height: 650px;
+}
+
+
+  #main-body {
+    background-color: #F1F1F0;
+    width: 101%;
+    margin-left: -8px;
+    height: 550px ;
+}
+
+
+.tagline-h3 {
+    position: relative;
+    top: -25px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 75px;
+    color: #B3B3B3;
+    font-family: 'Fanwood Text', serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+b{
+    
+    text-align: center;
+    /* font-family: 'Rubik', sans-serif;
+    font-weight: 300; */
+    font-style: italic;
+    font-size: 75px;
+    display: inline-block;
+    color: white;
+}
+
+#intro{
+    position: relative;
+    top: 110px;
+
+}
+
+#intro-p {
+    color: #454444;
+    text-align: center;
+    font-family: 'Fanwood Text', serif;
+    font-size: 57px;
+
+}
+
+#folio-intro-p {
+    margin-top: 15px;
+    color: gray;
+    font-family: 'Fanwood Text', serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+
+
+
+
+/* 
+Modal Begin */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 12px 4px;
+    height: 85px;
+    background-color: #554957;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+
+}
+
+#sosh-modal-h2 {
+    margin-top: 15px;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    height: 225px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    
+
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #554957;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+#sosh-container {
+    
+    width: 95%;
+    margin: 0 auto;
+}
+
+.sosh-icon {
+    
+    cursor: pointer;
+    display: inline-block;
+    
+    width: 8%;
+    margin: 3.35%;
+    padding: 10px;
+
+}
+
+.sosh-img {
+    width: 100%;
+    text-align: center;
+}
+
+.sosh {
+    
+    text-align: center;
+    font-size: 11px;
+    color: #a6a6a6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Main Modal (background) */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content2 {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 27%;
+    height: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close2 {
+    color: #53353D;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal-body2 {
+    padding: 2px 16px;
+    
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {left: -300px; opacity: 0} 
+    to {left: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+
+#main-modal-ul {
+    margin-top: 10px;
+}
+
+.main-modal-links {
+    color: #53353D;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 13px;
+    margin-left:  0px;
+    margin-bottom: 8px;
+
+    cursor: pointer;
+}
+
+#main-modal-h2 {
+    color: #53353D;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+  
+}
+
+
+.close2 {
+    padding-right: 15px;
+}
+
+
+#nj-modal {
+    width: 200px;
+    margin: 60px;
+    position: relative;
+    top: -35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+#index-customer-button {
+    margin-top: 50px;
+
+    background-color: #A84357;
+    width: 220px;
+    height: 85px;
+    border-radius: 45px;
+    display: inline-block;
+
+    position: absolute;
+    left: 29%;
+
+    cursor: pointer;
+}
+
+#index-host-button {
+    margin-top: 50px;
+
+    background-color: #7A697D;
+    width: 220px;
+    height: 85px;
+    border-radius: 45px;
+    display: inline-block;
+
+    position: absolute;
+    right: 29%;
+    
+    cursor: pointer;
+}
+
+#index-customer-button:hover, #index-host-button:hover  {
+    background-color: ;
+    box-shadow: 1px 1px 6px #999;
+}
+
+.index-button {
+    text-align: center;
+    font-family: 'League Spartan';
+    text-transform: uppercase; 
+    color: white;
+    font-size: 32px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover.css */
+
+
+
+
+/* Reveal */
+.hvr-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  .hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 4px;
+  }
+
+
+
+
+
+
+  .hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    color: #F1F1F0;
+  }
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #B58280;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  @keyframes hvr-buzz-out {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  .hvr-buzz-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+    -webkit-animation-name: hvr-buzz-out;
+    animation-name: hvr-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+
+
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #66414B;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+
+
+
+
+
+
+
