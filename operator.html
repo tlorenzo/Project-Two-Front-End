@@ -23,9 +23,8 @@
             <p id="customer-p">I want to go on a tour!</p>
         </div>
 
-        <a href="operator.html" class="nav-href" >
-        <div id="operator-div" class="hvr-reveal">
-             <p id="operator-p">I'm organizing a tour! </p> </a>
+        <div id="operator-div-2">
+            <p id="operator-p-2">I'm organizing a tour! </p>
         </div>
 
         <div id="signin-div" class="hvr-fade">
@@ -56,14 +55,22 @@
 
 <body>
 
-    <div id="title-div">
+    <div id="operator-dashboard-div">
 
-        <h1 id="title-h1">
-            WINE <i id="h1-ampersand">&</i> DINE.
-        </h1>
+        <div id="tour-operator-div">
+            <div id="operator-dashboard-panel-header">
+            <h3 id="tour-operator-dashboard-h3">
+                Dashboard
+            </h3>
+        </div>
+        </div>
+        
+        <div id="plus-button-container">
+            <p id="create-a-tour-p">Create a Tour</p>
+            <div id="create-modal" class="create-modal">
+            <img src="assets/images/plus-icon.png" id="plus-icon" class="hvr-pulse" alt="plus"></div>
 
-        <h3 class="tagline-h3">Wheel
-            <b>&</b> Deal.</h3> 
+        </div>
 
 
     </div>
@@ -99,6 +106,71 @@
 
 
 
+    <!--::::::::::::::::::::::: Create a Tour Button Modal Content Begins Here :::::::::::::::::::::::  -->
+    <div id="myModal3" class="modal3">
+
+            <!-- Modal content -->
+            <div class="modal-content3">
+              <div class="modal-header3">
+                <span class="close3">&times;</span>
+                <h2 id="tell-us-h2">Tell us about yourself!</h2>
+              </div>
+              <div class="modal-body3">
+
+                    <form class="tourInfo" style="padding: 20px;">
+                            Name
+                            <br>
+                            <input type="text" name="name" value="" class="op-field">
+                
+                            <br> Link to a Photo
+                            <br>
+                            <input type="text" name="photo" value="" class="op-field">
+                
+                            <br> Short Description
+                            <br>
+                            <input type="text" name="tour_description" value="" class="op-field" id="op-short-description">
+                
+                            <br> Address Line 1
+                            <br>
+                            <input type="text" name="address_1" value="" class="op-field">
+                
+                            <br> Address Line 2 (Optional)
+                            <br>
+                            <input type="text" name="addres_2" value="" class="op-field">
+                
+                            <br> City
+                            <br>
+                            <input type="text" name="city" value="" class="op-field">
+                
+                            <br> State
+                            <br>
+                            <input type="text" name="state" value="" class="op-field" id="op-state">
+                
+                            <br> Zip Code
+                            <br>
+                            <input type="text" name="zipcode" value="" class="op-field" id="op-zip">
+                
+                            <br> Social Media Links
+                            <br>
+                            <input type="text" name="social_media" value="" class="op-field">
+                
+                            <br>
+                            <br>
+                            <input type="button" class="button" value="Submit">
+                        </form>
+                
+                
+            
+                
+                
+              </div>
+              <div class="modal-footer3">
+                <h3 id="disclaimer-h3">Your information will not be shared (intentionally) with anyone under any circumstances. </h3>
+              </div>
+            </div>
+          
+          </div>
+    <!--::::::::::::::::::::::: Create a Tour Button Modal Content ENDS Here :::::::::::::::::::::::  -->
 
 
 
@@ -108,7 +180,10 @@
 
 
 
-    <!-- The Modal -->
+
+
+
+    <!-- :::::::::::::::::::::: Social Media Contact Modal Begins here ::::::::::::::::::::::  -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->

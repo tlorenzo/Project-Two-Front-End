@@ -60,10 +60,10 @@ header {
     z-index: 1;
 }
 
-#about-p, #customer-p, #organizer-p, #contact-p {
+#about-p, #customer-p, #operator-p, #signin-p {
 
     position: relative;
-    top:22px;
+    top:23px;
     margin: 0 auto 0 auto;
 
     font-family: 'Rubik', sans-serif;
@@ -82,14 +82,14 @@ header {
  display: inline-block;
 }
 
-#nav-customer-div, #nav-customer-div, #organizer-div, #signin-div {
+#nav-customer-div, #nav-customer-div, #operator-div, #signin-div {
     display: inline-block;
     margin-left: 5px;
-    height: 70px;
+    height: 69px;
     
 }
 
-#home-div, #about-div, #nav-customer-div, #organizer-div, #signin-div, #main-modal{
+#about-div, #nav-customer-div, #operator-div, #signin-div, #main-modal{
     cursor: pointer;
     display: inline-block;
     padding-left: 20px;
@@ -98,15 +98,32 @@ header {
 
 }
 
+#home-div {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+
+
 #signin-div {
     border-style: solid;
-    border-width: 1.5px;
+    border-width: 1px;
     border-color: #F1F1F0;
+    position: relative;
+    bottom: 0px;
+    height: 66px;
+}
+
+#signin-p {
+    margin-top: -2px;
 }
 
 #home-div {
     position: relative;
-    top: -8px;
+    top: -12px;
     left: -15px;
     
 }
@@ -117,7 +134,7 @@ header {
     padding: 18px;
     display: inline-block;
     position: relative;
-    top: 2px;
+    top: -3px;
 
  
 }
@@ -138,26 +155,35 @@ header {
 }
 
 #sosh-img-modal {
+    position: relative;
+    top: -6px;
     width:40px;
 }
 
 a:link {
+    color: inherit;
     text-decoration: none;
 }
 
 a:visited {
+    color: inherit;
     text-decoration: none;
 }
 
 a:hover {
+    color: inherit;
     text-decoration: none;
 }
 
 a:active {
+    color: inherit;
     text-decoration: none;
 }
-
-
+/* 
+nav-href {
+    text-decoration: none;
+    color: #F1F1F0;  
+} */
 
 
 
@@ -269,9 +295,9 @@ Modal Begin */
     bottom: 0;
     background-color: #fefefe;
     width: 100%;
-    -webkit-animation-name: slideIn;
+    -webkit-animation-name: slide-sosh-up;
     -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
+    animation-name: slide-sosh-up;
     animation-duration: 0.4s
 }
 
@@ -322,12 +348,12 @@ Modal Begin */
 }
 
 /* Add Animation */
-@-webkit-keyframes slideIn {
+@-webkit-keyframes slide-sosh-up {
     from {bottom: -300px; opacity: 0} 
     to {bottom: 0; opacity: 1}
 }
 
-@keyframes slideIn {
+@keyframes slide-sosh-up {
     from {bottom: -300px; opacity: 0}
     to {bottom: 0; opacity: 1}
 }
@@ -407,9 +433,9 @@ Modal Begin */
     background-color: #fefefe;
     width: 27%;
     height: 100%;
-    -webkit-animation-name: slideIn;
+    -webkit-animation-name: slide-from-left;
     -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
+    animation-name: slide-from-left;
     animation-duration: 0.4s
 }
 
@@ -438,12 +464,12 @@ Modal Begin */
 
 
 /* Add Animation */
-@-webkit-keyframes slideIn {
+@-webkit-keyframes slide-from-left {
     from {left: -300px; opacity: 0} 
     to {left: 0; opacity: 1}
 }
 
-@keyframes slideIn {
+@keyframes slide-from-left {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
 }
@@ -591,6 +617,217 @@ Modal Begin */
 
 
 
+/* ======================================= operator.html ======================================= */
+
+
+#operator-dashboard-div {
+    background-color: white;
+    height: 650px;
+    
+}
+
+#operator-div-2 {
+    display: inline-block;
+    margin-left: 5px;
+    height: 77.5px;
+    border-style: solid;
+    border-color: #DEDEDE;
+    border-width: 0px;    
+    cursor: default;
+}
+
+#operator-div-2 {
+    position: relative;
+    top: -20px;
+    color: white;
+    background-color: #613E47;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    border-radius: 0px 0px 0px 0px;
+
+}
+
+
+#operator-p-2 {
+    position: relative;
+    top:29px;
+    margin: 0 auto 0 auto;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    
+}
+
+#tour-operator-div {
+    background-color: #702947;
+    
+    height: 50px;
+    
+}
+
+#tour-operator-dashboard-h3 {
+    cursor: pointer;
+    color: #F1F1F0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 6px;
+    margin-left: 20px;
+    
+}
+
+
+#plus-button-container {
+    width: 100%;
+    height: 50px;
+    background-color: #08444F;
+  
+}
+
+#plus-icon {
+    height: 34px;
+    cursor: pointer;
+    padding: 6px;
+    float: right;
+
+}
+
+#create-a-tour-p {
+    color: #F1F1F0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 7px;
+    float: right;
+}
+
+
+
+
+
+/* ::::::::::::: Organizer  Create Tour Button Modal Begins Here :::::::::::::  */
+
+.modal3{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+   
+    padding: 0;
+    border: 1px solid #888;
+    width: 575px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: create-animation;
+    -webkit-animation-duration: 0.4s;
+    animation-name: create-animation;
+    animation-duration: 0.4s
+
+}
+
+/* Add Animation */
+@-webkit-keyframes create-animation {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes create-animation {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close3 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header3 {
+    padding: 2px 16px;
+    background-color: #53353D;
+    
+    
+}
+
+#tell-us-h2 {
+    color: white;
+    height: 55px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 17px;
+
+}
+
+.modal-body3 {padding: 2px 16px;}
+
+.modal-footer3 {
+    padding: 2px 16px;
+    background-color: #53353D;
+    color: white;
+    height: 30px;
+}
+
+#disclaimer-h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #B3B3B3;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.tourInfo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    font-style: italic;
+    color: #53353D;
+}
+
+.op-field {
+    height: 27px;
+    width: 500px;
+    border-radius: 0px;
+}
+
+.button {
+    background-color: #53353D;
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+    font-size: 27px;
+    color: #efefef;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+/* ::::::::::::: Organizer  Create Tour Button Modal Ends Here :::::::::::::  */
 
 
 
@@ -602,10 +839,7 @@ Modal Begin */
 
 
 
-
-
-
-/* Hover.css */
+/* ======================================= Hover.css ======================================= */
 
 
 
@@ -821,3 +1055,41 @@ Modal Begin */
 
 
 
+  /* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }

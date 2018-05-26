@@ -3,7 +3,7 @@ $( document ).ready(function() {
         $("#nav-items").hide();
       
         $("#nav-customer-div").hide();
-        $("#organizer-div").hide();
+        $("#operator-div").hide();
         $("#home-div").hide();
       
 
@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
         
         $( "#nav-customer-div" ).delay( 150 ).fadeIn( 800 );
-        $( "#organizer-div" ).delay( 200 ).fadeIn( 800 );
+        $( "#operator-div" ).delay( 200 ).fadeIn( 800 );
         
       
 
@@ -98,7 +98,35 @@ window.onclick = function(event) {
 
 
 
+// ::::::::::::::::::::::: Create a Tour Button Modal Script Begins Here :::::::::::::::::::::::  
 
+
+// Get the modal
+var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("plus-icon");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+// ::::::::::::::::::::::: Create a Tour Button Modal Script Ends Here :::::::::::::::::::::::  
 
 
 
